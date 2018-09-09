@@ -28,7 +28,7 @@ Quando recuperamos os valores dos elementos, recebemos eles como strings. E para
 ```
 
 ### Validando inputs
-E agora utilizaremos o laço de repetição FOR para validar os inputs.
+E agora utilizaremos a condição IF para validar os inputs.
 
 ```
 			if(num1 == '' || num1 == null){
