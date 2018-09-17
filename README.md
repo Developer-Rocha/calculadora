@@ -31,12 +31,12 @@ Quando recuperamos os valores dos elementos, recebemos eles como strings. E para
 E agora utilizaremos a condição IF para validar os inputs.
 
 ```
-			if(num1 == '' || num1 == null){
+			if(isNaN(num1)){
 				alert('Favor digitar um valor válido (num1)');
 				return false;
 			}	
 
-			if(num2 == '' || num2 == null){
+			if(isNaN(num2)){
 				alert('Favor digitar um valor válido (num2)');
 				return false;
 			}
