@@ -62,6 +62,10 @@
 				document.getElementById('resultado').value = resultado;
 			}
 
+			function limpar(){
+				document.getElementById('resultado').value = '';
+			}
+
 		</script>
 	</head>
 
@@ -101,8 +105,11 @@
 
 				<div class="col-md-4"></div>
 
-				<div class="col-md-4">
+				<div class="col-md-2">
 					<button onclick="calcular();" type="button" class="btn btn-lg btn-primary pull-right">Calcular</button>
+				</div>
+				<div class="col-md-2">
+					<button onclick="limpar()" type="button" class="btn btn-lg btn-success pull-right">Limpar Resultado</button>
 				</div>
 			</div>
 
