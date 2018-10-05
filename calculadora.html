@@ -62,8 +62,13 @@
 				document.getElementById('resultado').value = resultado;
 			}
 
-			function limpar(){
+			function limparResultado(){
 				document.getElementById('resultado').value = '';
+			}
+
+			function limparValores(){
+				document.getElementById('num1').value = '';
+				document.getElementById('num2').value = '';
 			}
 
 		</script>
@@ -101,15 +106,14 @@
 			<hr />
 
 			<div class="row">
-				<div class="col-md-4"></div>
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
 
-				<div class="col-md-4"></div>
-
-				<div class="col-md-2">
-					<button onclick="calcular();" type="button" class="btn btn-lg btn-primary pull-right">Calcular</button>
-				</div>
-				<div class="col-md-2">
-					<button onclick="limpar()" type="button" class="btn btn-lg btn-success pull-right">Limpar Resultado</button>
+				<button onclick="calcular()" type="button" class="btn btn-lg btn-success btn-block">Calcular</button>
+				
+				<button onclick="limparValores()" type="button" class="btn btn-lg btn-warning btn-block">Limpar Valores</button>
+				
+				<button onclick="limparResultado()" type="button" class="btn btn-lg btn-danger btn-block">Limpar Resultado</button>
 				</div>
 			</div>
 
